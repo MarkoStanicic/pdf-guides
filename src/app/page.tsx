@@ -237,6 +237,7 @@ export default function HomePage() {
         title="Real Results from Real People"
         description="Join thousands who've solved their problems with our guides"
         className="bg-trust-50"
+        layout="carousel"
       />
 
       {/* Features/Benefits */}
