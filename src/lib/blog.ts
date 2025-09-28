@@ -152,3 +152,6 @@ export function paginatePosts(posts: BlogPost[], page = 1, postsPerPage = 6) {
     hasPrevPage: page > 1,
   }
 }
+
+// Re-export types for consumers that import from '@/lib/blog'
+export type { BlogPost } from '@/types'
