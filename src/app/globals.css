@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  color: rgb(15, 23, 42);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Ensure text is always readable */
+.text-trust-900 {
+  color: rgb(15, 23, 42) !important;
+}
+
+.text-trust-800 {
+  color: rgb(30, 41, 59) !important;
+}
+
+.text-trust-700 {
+  color: rgb(51, 65, 85) !important;
+}
+
+.text-trust-600 {
+  color: rgb(71, 85, 105) !important;
+}
+
+/* Ensure backgrounds are visible */
+.bg-white {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.bg-trust-50 {
+  background-color: rgb(248, 250, 252) !important;
+}
+
+.bg-trust-900 {
+  background-color: rgb(15, 23, 42) !important;
+}
+
+/* Stretched link for card hover effects */
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+
+.stretched-link {
+  position: relative;
+}
